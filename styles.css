@@ -1,0 +1,293 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: white;
+}
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  font-size: 18px;
+  background-color: #222;
+  width: 90%;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+header {
+  background-color: #000000;
+  color: white;
+  text-align: center;
+  height: 40%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-size: 2em;
+}
+
+.main {
+  padding-top: 1px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  margin-left: 250px;
+  background-color: rgb(255, 0, 0);
+  height: 100vh;
+  text-align: center;
+}
+
+.main h2 {
+  font-size: 2em;
+}
+
+.main h3 {
+  font-size: 1.5em;
+}
+
+.main p {
+  font-size: 1em;
+}
+
+nav {
+  padding: 1.5em;
+  font-weight: bold;
+  float: left;
+  width: 220px;
+  text-decoration: none;
+  background: linear-gradient(to right, #000000, #0077dd);
+  min-height: 98vh;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 1.25em;
+  font-size: 1.2em;
+  text-decoration: none;
+  margin-bottom: 0.75em;
+}
+
+nav a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  margin: 0;
+  font-weight: bold;
+  font-size: 1.2em;
+  padding-left: 0px;
+  display: block;
+  padding: 0.35em 0.25em;
+}
+
+.nav-button {
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 2px solid transparent;
+  border-radius: 6px;
+  padding: 0.45em 0.6em;
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+}
+
+.nav-button:hover,
+.nav-button:focus {
+  background-color: rgba(255, 255, 255, 0.15);
+  outline: none;
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+.nav-button:active {
+  background-color: rgba(255, 255, 255, 0.22);
+  transform: translateY(1px);
+}
+
+nav ul li {
+  margin-bottom: 0.6em;
+}
+
+@media (max-width: 700px) {
+  nav {
+    float: none;
+    width: 100%;
+    min-height: auto;
+  }
+
+  .main {
+    margin-left: 0;
+    padding-left: 1em;
+  }
+  .nav-button {
+    width: 100%;
+    white-space: normal;
+  }
+}
+
+footer {
+  background-color: #000000;
+  color: white;
+  padding: 10px;
+  bottom: 0;
+  font-size: 1em;
+  position: relative;
+  text-align: center;
+}
+
+#imgcontainer img {
+  width: 40%;
+  max-width: 800px;
+  height: 40%;
+  max-height: 800px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#Quarterbacks-pic img {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#Wide_Recievers-pic img {
+  width: 30%;
+  height: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#Running_backs-pic img {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.Tight_Ends-pic img {
+  width: 50%;
+  height: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.text {
+  margin-left: 3px;
+  font-size: 1.5em;
+}
+
+@media only screen and (max-width: 64em) {
+  body {
+    background-color: #ffffff;
+    margin: 0;
+  }
+  header {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 0;
+    height: auto;
+  }
+  .main {
+    margin-left: 0;
+  }
+  nav {
+    width: auto;
+    float: none;
+    padding: 0.5em;
+    text-align: center;
+  }
+  nav ul {
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    display: inline;
+  }
+
+  footer {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .main {
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: 90%;
+  }
+  table {
+    font-size: 7px;
+  }
+  nav {
+    padding: 0;
+  }
+  nav li {
+    display: block;
+    margin: 0;
+  }
+  nav a {
+    display: block;
+  }
+  #mobile {
+    display: inline;
+  }
+  #desktop {
+    display: none;
+  }
+}
+
+label {
+  float: left;
+  display: block;
+  text-align: right;
+  width: 125px;
+  padding-right: 2em;
+}
+
+input,
+textarea {
+  display: block;
+  margin-bottom: 20px;
+}
+
+input[type="submit"] {
+  margin-left: 157px;
+}
+
+@media only screen and (max-width: 37.5em) {
+  label {
+    float: none;
+    text-align: left;
+  }
+  input[type="submit"] {
+    margin-left: 0;
+  }
+}
+#Wide_Recievers-video {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
